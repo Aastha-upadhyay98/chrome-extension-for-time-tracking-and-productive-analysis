@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Analytics Tracker",
+  "version": "1.0",
+  "permissions": ["tabs", "storage", "idle"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

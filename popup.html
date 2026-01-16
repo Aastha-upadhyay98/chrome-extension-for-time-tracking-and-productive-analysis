@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Analytics</title>
+    <style>
+        body { width: 300px; font-family: sans-serif; padding: 15px; }
+        h2 { font-size: 16px; color: #333; }
+        .stat-box { display: flex; justify-content: space-between; margin-bottom: 10px; }
+        #weekly-report { background: #f4f4f4; padding: 10px; border-radius: 5px; font-size: 12px; }
+        canvas { margin-top: 15px; }
+    </style>
+  <script src="chart.js"></script>
+</head>
+<body>
+    <h2>Productivity Analytics</h2>
+    <div id="weekly-report">
+        <strong>Weekly Report:</strong>
+        <div class="stat-box"><span>Productive:</span> <span id="prod-time">0s</span></div>
+        <div class="stat-box"><span>Unproductive:</span> <span id="unprod-time">0s</span></div>
+    </div>
+    
+    <canvas id="prodChart"></canvas>
+
+    <script src="popup.js"></script>
+</body>
+</html>
